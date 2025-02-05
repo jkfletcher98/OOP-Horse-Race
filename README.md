@@ -40,7 +40,7 @@ Race()
 void run()
 ```
 
-## main
+## int main()
 ```
 bool keepGoing gets true
 while keepGoing
