@@ -26,6 +26,7 @@ bool isWinner()
 	if position is equal to trackLength
 		print "Horse {id} wins!"
 		result gets true
+	return result
 ```
 
 ## Race
@@ -37,4 +38,14 @@ Horse horses[]
 Race()
 
 void run()
+```
+
+## main
+```
+bool keepGoing gets true
+while keepGoing
+	if result is equal to true
+		keepGoing gets false
+		program ends
+	print "Press ENTER for next round"
 ```
