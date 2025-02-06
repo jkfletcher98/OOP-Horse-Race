@@ -29,10 +29,10 @@ class Horse {
 		void printLane(){
 			for (int space = 0; space < trackLength; space++){
 				if (space == position){
-					printf("%d \n", id)
+					printf("%d \n", id);
 				}
 				else {
-					printf(". ")
+					printf(". ");
 				}
 			} // end for
 		} // end printLane
@@ -46,3 +46,5 @@ class Horse {
 			return result;
 		} // end isWinner
 }; // end Horse
+
+
