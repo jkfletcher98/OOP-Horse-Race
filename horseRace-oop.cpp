@@ -11,6 +11,9 @@ class Horse {
 
 	public:
 		Horse(){
+			position = 0;
+			id = 0;
+			trackLength = 15;
 		} // end constructor
 
 		void init(int id, int trackLength){
