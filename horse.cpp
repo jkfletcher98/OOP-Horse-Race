@@ -6,17 +6,17 @@ Horse::Horse(){
 	trackLength = 15;
 } // end constructor
 
-Horse::void init(int id, int trackLength){
+void Horse::init(int id, int trackLength){
 	Horse::id = id;
 	Horse::trackLength = trackLength;
 } // end init
 
-Horse::void advance(){
+void Horse::advance(){
 	int coin = dist(rd);
 	Horse::position += coin;
 } // end advance
 
-Horse::void printLane(){
+void Horse::printLane(){
 	for (int space = 0; space < tackLength; space++){
 		if (space == position){
 			printf("%d, \n ", id);
@@ -27,7 +27,7 @@ Horse::void printLane(){
 	} // end for
 } // end printLane
 
-Horse::bool isWinner(){
+bool Horse::isWinner(){
 	bool result = false;
 	if (position > trackLength){
 		result = true;
