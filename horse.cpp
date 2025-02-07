@@ -11,7 +11,6 @@ Horse::void init(int id, int trackLength){
 	Horse::trackLength = trackLength;
 } // end init
 
-
 Horse::void advance(){
 	int coin = dist(rd);
 	Horse::position += coin;
