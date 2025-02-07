@@ -8,4 +8,6 @@ Race::Race(){
 }; // end constructor
 
 void Race::run(){
-
+	for (int* horse in horses){
+		Horse::advance();
+		Horse::printLane();
