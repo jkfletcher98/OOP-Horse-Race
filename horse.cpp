@@ -1,4 +1,9 @@
 #include "horse.h"
+#include <iostream>
+#include <random>
+
+std::random_device rd;
+std::uniform_int_distribution<int> dist(0,1);
 
 Horse::Horse(){
 	position = 0;
@@ -17,7 +22,7 @@ void Horse::advance(){
 } // end advance
 
 void Horse::printLane(){
-	for (int space = 0; space < tackLength; space++){
+	for (int space = 0; space < trackLength; space++){
 		if (space == position){
 			printf("%d, \n ", id);
 		} // end if
@@ -32,6 +37,7 @@ bool Horse::isWinner(){
 	if (position > trackLength){
 		result = true;
 		printf("Horse %d wins! \n", id);
-	} // end if
+	}; // end if
+	return result;
 } // end isWinner
 
